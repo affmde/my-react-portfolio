@@ -1,0 +1,101 @@
+#projects-title{
+    color: #228b22;
+    font-size: 6vh;
+    font-weight: bold;
+    text-shadow: 0 0px 0px rgba(9, 231, 64, 0.5);
+    letter-spacing: 0.05em;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px #333);
+    margin-bottom: 30px;
+
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+#projects-container{
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-Content: space-evenly;
+    align-items: center;
+    border-bottom: 5px dotted rgba(9, 231, 64, 0.5);
+    border-top: 5px dotted rgba(9, 231, 64, 0.5);
+
+    animation: rotateInUpLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s; /* don't forget to set a duration! */
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-container{
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 10px 10px;
+    border-radius: 15px;
+}
+
+.flip-card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 10px 10px 100px 10px rgba(99, 90, 90, 0.5);
+    border-radius: 15px;
+}
+.flip-card-container:hover .flip-card{
+    transform: rotateY(180deg);
+}
+.flip-card-front{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.flip-card-back{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.flip-card-back > * {
+    width: 70%;
+}
+
+#project-btn{
+    background-color: #228b22;
+    border: 2px solid darkgreen;
+    padding: 3px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#project-btn:hover{
+    transform: scale(1.05);
+    background-color: rgba(73, 211, 73, 0.959);
+    transition: all linear 0.2s;
+    font-weight: bold;
+}
+
+
+

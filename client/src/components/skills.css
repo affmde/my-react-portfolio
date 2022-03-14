@@ -1,0 +1,113 @@
+#skills-image{
+    height: 50vh;
+}
+
+#skills-image-horizontal{
+    height: 90%;
+    display: none;
+}
+
+.questions-row{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.question{
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end 3.5s;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .answer{
+      opacity: 1;
+      animation: type 10s ease-in;
+  }
+
+@keyframes type{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+#education-logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education-logo{
+    width: 40vh;
+}
+.education-logo:hover{
+    transform: scale(1.05);
+}
+
+#education-title{
+    font-size: 5vh;
+    font-weight: bold;
+    letter-spacing: .15em;
+}
+
+.degree{
+    font-size: 3vh;
+    letter-spacing: 0.08em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.school{
+    font-size: 1.5vh;
+    letter-spacing: 0.08em;
+    font-style: italic;
+}
+
+@media only screen and (max-width:600px){
+    .question{
+        font-weight: bold;
+        font-size: 18px;
+        overflow:hidden; /* Ensures the content is not revealed until the animation */
+        border-right: none; /* The typwriter cursor */
+        white-space: pre-wrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: none
+            
+    }
+
+    .answer{
+        opacity: 1;
+        animation: none;
+        font-size: 15px;
+    }
+
+    #education-logo-container{
+        display: none;
+    }
+    #skills-logo-container{
+        display: none;
+    }
+
+    #skills-image-horizontal{
+        display: block;
+    }
+    #skills-image{
+        display: none;
+    }
+}

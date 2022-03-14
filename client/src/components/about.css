@@ -1,0 +1,47 @@
+#myPhoto{
+    width: 70%;
+    border-radius: 2%;
+    padding: 20px;
+    border: 20px solid white;
+}
+
+#about-text-container > *{
+    margin: 5px 0
+}
+
+#text-highlight{
+    color: orangered;
+    text-decoration: none;
+}
+
+fieldset {
+    border: 10px solid transparent; 
+    border-top-color: black; 
+    box-sizing: border-box; 
+    grid-area: 1 / 1; /* first row, first column */
+    padding: 20px; 
+    width: inherit; 
+  }
+
+  legend {
+    font: 15pt/0 'Averia Serif Libre'; 
+    margin: auto; /* to center */
+    padding: 0 4px; 
+  }
+
+
+  .hobbies-pic{
+      width: 20px;
+  }
+
+  #row-personal-info{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+  }
+
+  #row-personal-info > *{
+      margin: 10px 0;
+      text-align: left;
+  }
