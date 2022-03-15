@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b384af04.css",
-    "main.js": "/static/js/main.3fc4297a.js",
-    "static/js/787.56d9acf9.chunk.js": "/static/js/787.56d9acf9.chunk.js",
-    "static/media/youscout.png": "/static/media/youscout.2a5579b6a20e1d0f532b.png",
-    "static/media/skills-image.png": "/static/media/skills-image.a9a69076091d7f9a634d.png",
-    "static/media/skill-horizontal.png": "/static/media/skill-horizontal.da5e2d7fa9bb6c7c4e00.png",
-    "static/media/pokethatVertical.png": "/static/media/pokethatVertical.1d60024fec6a684c398b.png",
-    "static/media/andre-miranda.jpg": "/static/media/andre-miranda.260ba060cc84af04658d.jpg",
-    "static/media/homepage-pic.png": "/static/media/homepage-pic.aac27247539be3ce9e67.png",
-    "static/media/codecademy-logo.png": "/static/media/codecademy-logo.c09eb87b5e8828c9c13b.png",
-    "static/media/the-quiz.png": "/static/media/the-quiz.c89cb5d4162a47f1dd4c.png",
-    "static/media/am-no-background.png": "/static/media/am-no-background.0771b55f42c4b4685ed9.png",
-    "index.html": "/index.html",
-    "main.b384af04.css.map": "/static/css/main.b384af04.css.map",
-    "main.3fc4297a.js.map": "/static/js/main.3fc4297a.js.map",
-    "787.56d9acf9.chunk.js.map": "/static/js/787.56d9acf9.chunk.js.map"
+    "main.css": "/my-react-portfolio/static/css/main.b384af04.css",
+    "main.js": "/my-react-portfolio/static/js/main.d6ac2a49.js",
+    "static/js/787.56d9acf9.chunk.js": "/my-react-portfolio/static/js/787.56d9acf9.chunk.js",
+    "static/media/youscout.png": "/my-react-portfolio/static/media/youscout.2a5579b6a20e1d0f532b.png",
+    "static/media/skills-image.png": "/my-react-portfolio/static/media/skills-image.a9a69076091d7f9a634d.png",
+    "static/media/skill-horizontal.png": "/my-react-portfolio/static/media/skill-horizontal.da5e2d7fa9bb6c7c4e00.png",
+    "static/media/pokethatVertical.png": "/my-react-portfolio/static/media/pokethatVertical.1d60024fec6a684c398b.png",
+    "static/media/andre-miranda.jpg": "/my-react-portfolio/static/media/andre-miranda.260ba060cc84af04658d.jpg",
+    "static/media/homepage-pic.png": "/my-react-portfolio/static/media/homepage-pic.aac27247539be3ce9e67.png",
+    "static/media/codecademy-logo.png": "/my-react-portfolio/static/media/codecademy-logo.c09eb87b5e8828c9c13b.png",
+    "static/media/the-quiz.png": "/my-react-portfolio/static/media/the-quiz.c89cb5d4162a47f1dd4c.png",
+    "static/media/am-no-background.png": "/my-react-portfolio/static/media/am-no-background.0771b55f42c4b4685ed9.png",
+    "index.html": "/my-react-portfolio/index.html",
+    "main.b384af04.css.map": "/my-react-portfolio/static/css/main.b384af04.css.map",
+    "main.d6ac2a49.js.map": "/my-react-portfolio/static/js/main.d6ac2a49.js.map",
+    "787.56d9acf9.chunk.js.map": "/my-react-portfolio/static/js/787.56d9acf9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b384af04.css",
-    "static/js/main.3fc4297a.js"
+    "static/js/main.d6ac2a49.js"
   ]
 }
