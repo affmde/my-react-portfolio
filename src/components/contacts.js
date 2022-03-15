@@ -1,4 +1,4 @@
-import { Col, Container, Form, Row, Button } from "react-bootstrap"
+import { Col, Container, Form, Row, Button, Image } from "react-bootstrap"
 import './contacts.css'
 import { useState } from "react";
 import { send } from 'emailjs-com';
@@ -60,7 +60,27 @@ export const Contacts = () => {
                             </Form>
                         </Row>
                     </Col>
-                    <Col id="secondCol"></Col>
+                    <Col id="secondCol">
+                        <Row>
+                            <Col id="findMe">Find me:</Col>
+                        </Row>
+                        <Row className="findMe-row">
+                            <Col><Image className="contacts-images" src="https://img.icons8.com/fluency/344/facebook-new.png"></Image></Col>
+                            <Col xs={10}><a className="link" href="https://www.facebook.com/andre.miranda.77312" target="_blank">https://www.facebook.com/andre.miranda.77312</a></Col>
+                        </Row>
+                        <Row className="findMe-row">
+                            <Col><Image className="contacts-images" src="https://img.icons8.com/color/344/instagram-new--v1.png"></Image></Col>
+                            <Col xs={10}><a className="link" href="https://www.instagram.com/andremiranda4/" target="_blank">https://www.instagram.com/andremiranda4/</a></Col>
+                        </Row>
+                        <Row className="findMe-row">
+                            <Col><Image className="contacts-images" src="https://img.icons8.com/external-justicon-flat-justicon/344/external-linkedin-social-media-justicon-flat-justicon.png"></Image></Col>
+                            <Col xs={10}><a className="link" href="https://www.linkedin.com/in/andre-miranda-3a768556/" target="_blank">https://www.linkedin.com/in/andre-miranda-3a768556/</a></Col>
+                        </Row>
+                        <Row className="findMe-row">
+                            <Col><Image className="contacts-images" src="https://img.icons8.com/stickers/344/github.png"></Image></Col>
+                            <Col xs={10}><a className="link" href="https://github.com/affmde" target="_blank">https://github.com/affmde</a></Col>
+                        </Row>
+                    </Col>
                 </Row>
                 
             </Container>

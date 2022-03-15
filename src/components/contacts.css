@@ -9,6 +9,38 @@
     margin: 30px 0;
 }
 
+.contacts-images{
+    height: 5vh;
+}
+
+#findMe{
+    font-size: 4vh;
+    margin-bottom: 30px;
+}
+
+.link{
+    font-size: 2vh;
+    color: white;
+    text-decoration: none;
+}
+.link:hover{
+    color: green;
+}
+
+#secondCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 25px 20px;
+    position: relative;
+    left: 10%;
+}
+
+.findMe-row{
+    margin-top: 15px;
+}
+
 @media only screen and (max-width: 600px){
     #secondCol{
         display: none;
