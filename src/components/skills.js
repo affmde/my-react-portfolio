@@ -4,6 +4,7 @@ import skills from '../media/images/skills-image.png';
 import esdrm from '../media/images/esdrm-logo.png';
 import codecademy from '../media/images/codecademy-logo.png';
 import skillsHorizontal from '../media/images/skill-horizontal.png';
+import { PopoverComponent } from "./popoverComponent";
 
 export const Skills = () => {
     return(
@@ -37,8 +38,17 @@ export const Skills = () => {
                 </Row>
                 <Row style={{marginBottom: '50px'}}>
                     <Col id="education-logo-container">
-                        <Image className="education-logo" src={esdrm}></Image>
-                        <Image className="education-logo" src={codecademy}></Image>
+                        <PopoverComponent image={esdrm}
+                                          title={'ESDRM'}
+                                          website="https://siesdrm.ipsantarem.pt/esdrm/si_main"
+                                          url="https://siesdrm.ipsantarem.pt/esdrm/web_gessi_docs.download_file?p_name=F1276349851/Campus%20ESDRM.jpg" 
+                        />
+                        <PopoverComponent image={codecademy}
+                                          title={'Codecademy'}
+                                          website="https://www.codecademy.com/"
+                                          url="https://research-assets.cbinsights.com/2022/01/03014853/Codecademy-Image.png" 
+                        />
+                        
                     </Col>
 
                     <Col>
