@@ -15,11 +15,11 @@ function App() {
       <BrowserRouter>
         <TopNav></TopNav>
         <Routes>
-          <Route path="*" element={<Homepage />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/contacts" element={<Contacts />}></Route>
+          <Route path="/my-react-portfolio" element={<Homepage />}></Route>
+          <Route path="/my-react-portfolio/about" element={<About />}></Route>
+          <Route path="/my-react-portfolio/skills" element={<Skills />}></Route>
+          <Route path="/my-react-portfolio/projects" element={<Projects />}></Route>
+          <Route path="/my-react-portfolio/contacts" element={<Contacts />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
