@@ -1,12 +1,13 @@
 #myPhoto{
-    width: 70%;
-    border-radius: 2%;
-    padding: 20px;
-    border: 20px solid white;
+    width: 50vh;
+    margin-top: 10vh;
+    border-radius: 5%;
+    box-shadow: 1px 2px 3px 4px rgba(211, 211, 211, 0.274);
 }
 
 #about-text-container > *{
-    margin: 5px 0
+    margin: 5px 0;
+    width: 100%;
 }
 
 #text-highlight{
@@ -44,4 +45,87 @@ fieldset {
   #row-personal-info > *{
       margin: 10px 0;
       text-align: left;
+      
+  }
+
+  .languages-img{
+      height:8vh;
+      float: right;
+  }
+  .languages-txt{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .info-title{
+      font-size: 4vh;
+      margin-bottom: 15px;
+      font-weight: bold;
+  }
+  .info-subtitle{
+      font-size: 3vh;
+      font-weight: 500;
+      text-align: right;
+      margin: 10px 0;
+  }
+  .info-subtinfo{
+    font-size: 3vh;
+    text-align: left;
+    margin: 10px 0;
+  }
+  .hobbies-img{
+      width: 10vw;
+  }
+  .hobbies-img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+  }
+  #hobbies-row{
+    display: flex; 
+    align-items:center;
+    text-align: center;
+    margin: 80px 0;
+}
+#personal-info-row{
+    display: flex; 
+    align-items:flex-start;
+    text-align: center; 
+    margin: 80px 0; 
+    background: radial-gradient(white, rgb(243, 237, 237)); 
+    color: black; 
+    border-radius: 10px; 
+    box-shadow: 1px 2px 3px 4px lightGray;
+}
+
+  @media only screen and (max-width: 600px){
+    #myPhoto{
+        width: 80%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    #hobbies-row{
+        display: none;
+    }
+    .languages-img{
+        height:5vh;
+        float: right;
+    }
+    .info-title{
+        font-size: 3vh;
+        margin-bottom: 5px;
+        margin-top: 30px;
+    }
+    .info-subtitle{
+        font-size: 2vh;
+        font-weight: 500;
+        text-align: right;
+        margin: 2px 0;
+    }
+    .info-subtinfo{
+        font-size: 2vh;
+        text-align: left;
+        margin: 2px 0;
+      }
+    
   }
