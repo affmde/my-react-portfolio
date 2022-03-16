@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route} from 'react-router-dom'
 import { About } from './components/about';
 import { Homepage } from './components/homepage';
 import { TopNav } from './components/navbar';
@@ -12,17 +12,17 @@ import { Contacts } from './components/contacts';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <TopNav></TopNav>
         <Routes>
-          <Route path="/my-react-portfolio" element={<Homepage />}></Route>
-          <Route path="/my-react-portfolio/about" element={<About />}></Route>
-          <Route path="/my-react-portfolio/skills" element={<Skills />}></Route>
-          <Route path="/my-react-portfolio/projects" element={<Projects />}></Route>
-          <Route path="/my-react-portfolio/contacts" element={<Contacts />}></Route>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/skills" element={<Skills />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

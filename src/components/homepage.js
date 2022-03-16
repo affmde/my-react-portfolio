@@ -1,9 +1,10 @@
 import { Col, Container, Image, Row, Button } from "react-bootstrap"
 import './homepage.css'
 import developerEmoji from '../media/images/homepage-pic.png'
-
+import {useNavigate} from 'react-router-dom'
 
 export const Homepage = () => {
+    const nav= useNavigate()
     return(
         <div class="page-container">
             <Container>
@@ -17,7 +18,7 @@ export const Homepage = () => {
                                 getting experience in this amazing Tech World! 
                                 <span role="img" aria-label="grinning-face">😀</span></Col>
                             <Col id="hire-btn-container">
-                                <Button id="hireMe-button">Contact me</Button>
+                                <Button id="hireMe-button" onClick={()=>nav('/contacts')}>Contact me</Button>
                             </Col>
                         </Row>
                     </Col>
