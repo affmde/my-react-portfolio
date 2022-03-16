@@ -42,6 +42,10 @@ export const About = () => {
                             <Col className="info-subtitle">Nationality: </Col>
                             <Col className="info-subtinfo">Portugal</Col>
                         </Row>
+                        <Row>
+                            <Col className="info-subtitle">Location: </Col>
+                            <Col className="info-subtinfo">Helsinki</Col>
+                        </Row>
                     </Col>
                     <Col md={6}>
                         <Col className="info-title">Languages</Col>
@@ -50,7 +54,7 @@ export const About = () => {
                             <Col className="languages-txt">Native</Col>
                         </Row>
                         <Row>
-                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/england.png"></Image></Col>
+                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/great-britain.png"></Image></Col>
                             <Col className="languages-txt">Fluent</Col>
                         </Row>
                         <Row>
