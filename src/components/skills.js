@@ -3,7 +3,10 @@ import './skills.css';
 import skills from '../media/images/skills-image.png';
 import esdrm from '../media/images/esdrm-logo.png';
 import codecademy from '../media/images/codecademy-logo.png';
+import helsinkiUniversity from '../media/images/helsinki-university.png'
 import skillsHorizontal from '../media/images/skill-horizontal.png';
+import backendLogos from '../media/images/backend-logos.png';
+import backendHorizontal from '../media/images/backend-logos-horizontal.png'
 import { PopoverComponent } from "./popoverComponent";
 
 export const Skills = () => {
@@ -23,7 +26,7 @@ export const Skills = () => {
                         </Row>
                         <Row className="questions-row">
                             <Col className="question">Do I feel more confortable with Front-End or Back-End?</Col>
-                            <Col className="answer">Clearly nowaday more confortable with Front-End. Although i have been developing some projects with Node.js and express servers form Back-End. </Col>
+                            <Col className="answer">Clearly nowaday more confortable with Front-End. Although I have been developing some projects with Node.js, Express and MongoDB for Back-End. </Col>
                         </Row>
                         <Row className="questions-row">
                             <Col className="question">What is my Experience?</Col>
@@ -33,8 +36,10 @@ export const Skills = () => {
                     </Col>
                     <Col id="skills-logo-container">
                         <Image id="skills-image" src={skills}></Image>
+                        <Image id="backend-logos" src={backendLogos}></Image>
                     </Col>
-                    <Image id="skills-image-horizontal" src={skillsHorizontal}></Image>
+                    <Image className="skills-image-horizontal" src={skillsHorizontal}></Image>
+                    <Image className="skills-image-horizontal" src={backendHorizontal}></Image>
                 </Row>
                 <Row style={{marginBottom: '50px'}}>
                     <Col id="education-logo-container">
@@ -48,6 +53,11 @@ export const Skills = () => {
                                           website="https://www.codecademy.com/"
                                           url="https://research-assets.cbinsights.com/2022/01/03014853/Codecademy-Image.png" 
                         />
+                        <PopoverComponent image={helsinkiUniversity}
+                                          title={'Helsinki University'}
+                                          website="https://fullstackopen.com/en/"
+                                          url="https://www.helsinki.fi/assets/drupal/s3fs-public/styles/hero_image/public/migrated-group-news/150058-fullstack_en_1184x507.jpg?h=316e730a&itok=gg-qwvAH" 
+                        />
                         
                     </Col>
 
@@ -58,6 +68,8 @@ export const Skills = () => {
                             <Col className="school">Sports Science School of Rio Maior, Portugal</Col>
                             <Col className="degree">Front End Career Path</Col>
                             <Col className="school">Codecademy</Col>
+                            <Col className="degree">Full Stack open 2022</Col>
+                            <Col className="school">Helsinki University</Col>
                         </Row>
                     </Col>
                 </Row>
