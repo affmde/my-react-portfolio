@@ -67,7 +67,7 @@ export const Skills = () => {
                             <Col id="education-title">Education</Col>
                             <Col className="degree">Bachelor - Sports Science with specialization in Football</Col>
                             <Col className="school">Sports Science School of Rio Maior, Portugal</Col>
-                            <Col className="degree">Front End Career Path</Col>
+                            <Col className="degree">Front End Engineer Career Path</Col>
                             <Col className="school">Codecademy</Col>
                             <Col className="degree">Full Stack open 2022</Col>
                             <Col className="school">Helsinki University</Col>
