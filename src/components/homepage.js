@@ -3,6 +3,7 @@ import './homepage.css'
 import developerEmoji from '../media/images/homepage-pic.png'
 import {useNavigate} from 'react-router-dom'
 
+
 export const Homepage = () => {
     const nav= useNavigate()
     return(

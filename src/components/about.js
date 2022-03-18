@@ -2,10 +2,18 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 import './about.css'
 import myPhoto from '../media/images/andre-miranda.jpg'
 import { TooltipComponent } from "./tooltip"
+import {Helmet} from "react-helmet"
 
 export const About = () => {
     return (
         <div className="page-container animate__animated animate__zoomIn">
+            <Helmet>
+                <title>About Me</title>
+                <meta 
+                    name="description"
+                    content="Discover more about me and my story of life"
+                />
+            </Helmet>
             <Container>
             <Row style={{minHeight: '70vh', display: 'flex', flexDirection: 'column', alignItems:'center', textAlign: 'center'}} >
                     <Col>

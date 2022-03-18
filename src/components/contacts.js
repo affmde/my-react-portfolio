@@ -2,6 +2,7 @@ import { Col, Container, Form, Row, Button, Image } from "react-bootstrap"
 import './contacts.css'
 import { useState } from "react";
 import { send } from 'emailjs-com';
+import {Helmet} from "react-helmet";
 
 export const Contacts = () => {
     const [name, setName] = useState('')
@@ -26,6 +27,13 @@ export const Contacts = () => {
 
     return(
         <div className="page-container">
+            <Helmet>
+                <title>Contacts</title>
+                <meta 
+                    name="description"
+                    content="Contact me through the form, or then visit one of my pages and hit me there"
+                />
+            </Helmet>
             <Container>
                 <Row>
                     <Col>

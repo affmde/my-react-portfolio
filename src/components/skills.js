@@ -8,11 +8,19 @@ import skillsHorizontal from '../media/images/skill-horizontal.png';
 import backendLogos from '../media/images/backend-logos.png';
 import backendHorizontal from '../media/images/backend-logos-horizontal.png'
 import { PopoverComponent } from "./popoverComponent";
+import {Helmet} from "react-helmet";
 
 
 export const Skills = () => {
     return(
         <div className="page-container">
+            <Helmet>
+                <title>Skills</title>
+                <meta 
+                    name="description"
+                    content="Find all my technical habilities as well as my education"
+                />
+            </Helmet>
             <Container>
                 <Row style={{marginBottom: '40px'}}>
                     <Col>

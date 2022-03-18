@@ -4,10 +4,18 @@ import pokethat from '../media/images/pokethatVertical.png'
 import theQuiz from '../media/images/the-quiz.png';
 import youscout from '../media/images/youscout.png'
 import { Card } from "./card";
+import {Helmet} from "react-helmet";
 
 export const Projects = () => {
     return (
         <div className="page-container">
+            <Helmet>
+                <title>Projects</title>
+                <meta 
+                    name="description"
+                    content="Check all my projects. You can try them live or read more about my experience on creating them"
+                />
+            </Helmet>
             <div>
                 <p className="center" id="projects-title">My Projects</p>
             </div>

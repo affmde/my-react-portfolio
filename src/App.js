@@ -8,11 +8,23 @@ import { Footer } from './components/footer';
 import { Skills } from './components/skills';
 import 'animate.css'
 import { Contacts } from './components/contacts';
+import {Helmet} from 'react-helmet';
 
 function App() {
   return (
     <div>
       <HashRouter>
+        <Helmet>
+          <title>Portfolio</title>
+          <meta 
+            name="description"
+            content="My personal portfolio where you can know more about me and se all my work"
+          />
+          <meta 
+            name="keywords"
+            content="Portfolio, web-development, Projects, Andre Miranda, affmde, job, seeker"
+          />
+        </Helmet>
         <TopNav></TopNav>
         <Routes>
           <Route path="/" element={<Homepage />}></Route>
