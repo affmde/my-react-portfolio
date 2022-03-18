@@ -20,6 +20,7 @@ export const Projects = () => {
                     But dont worry, if you are too scared for it, just open your pokedex and discover all 151
                     pokemons available"
                     url="https://pokethat.herokuapp.com/"
+                    index={0}
                      />
                 
                 <Card
@@ -30,6 +31,7 @@ export const Projects = () => {
                     guaranteed a place in the top rankng of this amazing quiz.
                     If you dont get everything right, dont worry, play again and try to be top 5."
                     url="https://the-quiz-affm.herokuapp.com/"
+                    index={1}
                      />
 
                 <Card
@@ -39,6 +41,7 @@ export const Projects = () => {
                     description="Web app designed thinking specially on football scouts, who travel the world looking for the next football star.
                     Organize your schedules and create/edit your player reports in an easy way with Youscout"
                     url="https://youscout.herokuapp.com/home"
+                    index={2}
                      />
 
             </Container>

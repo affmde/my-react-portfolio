@@ -1,3 +1,4 @@
+import { InfoToModal } from "./modalProjectInfo"
 
 export const Card = (props) => {
     return(
@@ -11,6 +12,7 @@ export const Card = (props) => {
                             <p>{props.subtitle}</p>
                             <p>{props.description}</p>
                             <a id="project-btn" href={props.url} target="_blank">Go to project</a>
+                            <InfoToModal index={props.index}/>
                         </div>
                     </div>
                 </div>

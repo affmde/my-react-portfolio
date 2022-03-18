@@ -1,0 +1,11 @@
+.stack-image{
+    width: 30px;
+    position: absolute; 
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.stack-image:hover{
+    transform: scale(1.1);
+}
