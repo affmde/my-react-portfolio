@@ -33,7 +33,7 @@ export const PopoverComponent = (props) =>{
           <Popover.Body>
             <Image src={props.url} style={{width: '100%'}}></Image>
             <Popover.Body>
-                <strong>Website: </strong><a style={{textDecoration: 'none'}} href={props.website} target="_blank">{props.website}</a>
+                <strong>Website: </strong><a style={{textDecoration: 'none'}} href={props.website} target="blank">{props.website}</a>
             </Popover.Body>
           </Popover.Body>
         </Popover>

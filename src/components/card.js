@@ -11,7 +11,7 @@ export const Card = (props) => {
                             <h3>{props.title}</h3>
                             <p>{props.subtitle}</p>
                             <p>{props.description}</p>
-                            <a id="project-btn" href={props.url} target="_blank">Go to project</a>
+                            <a id="project-btn" href={props.url} target="blank">Go to project</a>
                             <InfoToModal index={props.index}/>
                         </div>
                     </div>
