@@ -3,7 +3,6 @@
 }
 #backend-logos{
     height:30vh;
-    float:calc();
 }
 #skills-logo-container{
     display: flex;
@@ -97,7 +96,7 @@
         white-space: pre-wrap; /* Keeps the content on a single line */
         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
         letter-spacing: .15em; /* Adjust as needed */
-        animation: none
+        animation: none;
             
     }
 
