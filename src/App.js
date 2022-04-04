@@ -24,6 +24,7 @@ function App() {
             name="keywords"
             content="Portfolio, web-development, Projects, Andre Miranda, affmde, job, seeker"
           />
+          
         </Helmet>
         <TopNav></TopNav>
         <Routes>
