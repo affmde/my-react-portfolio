@@ -18,8 +18,8 @@ function App() {
           <title>Portfolio</title>
           <meta 
             name="description"
-            content="My personal portfolio where you can know more about me and se all my work"
-          />
+           content="My personal portfolio where you can know more about me and se all my work"
+          /> 
           <meta 
             name="keywords"
             content="Portfolio, web-development, Projects, Andre Miranda, affmde, job, seeker"

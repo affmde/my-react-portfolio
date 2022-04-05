@@ -13,10 +13,15 @@ export const Homepage = () => {
                     <Col className="center">
                         <Row className="center description">
                             <Col><span role="img" aria-label="hello">👋</span>   Hi there!</Col>
-                            <Col id="title">André Miranda</Col>
-                            <Col id='web-dev'>Web Developer - Full-Stack</Col>
-                            <Col id="webdev-description">I am a junior developer who is trying to enter the Market and 
-                                getting experience in this amazing Tech World! 
+                            <Col ><h1 id="title">André Miranda</h1></Col>
+                            <Col>
+                                <Row>
+                                    <Col xs={12}><h4 className='web-dev'>Web Developer</h4></Col>
+                                    <Col xs={12}><h4 className='web-dev'>Full-Stack</h4></Col>
+                                </Row>
+                            </Col>
+                            <Col><p id="webdev-description">I am a junior developer who is trying to enter the Market and 
+                                getting experience in this amazing Tech World! </p>
                                 <span role="img" aria-label="grinning-face">😀</span></Col>
                             <Col id="hire-btn-container">
                                 <Button id="hireMe-button" onClick={()=>nav('/contacts')}>Contact me</Button>
