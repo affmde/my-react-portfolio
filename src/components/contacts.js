@@ -3,6 +3,7 @@ import './contacts.css'
 import { useState } from "react";
 import { send } from 'emailjs-com';
 import {Helmet} from "react-helmet";
+import homepagePic from '../media/images/homepagePic.png'
 
 export const Contacts = () => {
     const [name, setName] = useState('')
@@ -31,8 +32,12 @@ export const Contacts = () => {
                 <title>Contacts</title>
                 <meta 
                     name="description"
+                    property="og:description"
                     content="Contact me through the form, or then visit one of my pages and hit me there"
                 />
+                <meta property="og:title" content="Contacts" />
+                <meta property="og:url" content="https://affmde.github.io/my-react-portfolio/#/contacts" />
+                <meta property="og:image" content={homepagePic} />
             </Helmet>
             <Container>
                 <Row>
@@ -73,19 +78,19 @@ export const Contacts = () => {
                             <Col id="findMe">Find me:</Col>
                         </Row>
                         <Row className="findMe-row">
-                            <Col><Image className="contacts-images" src="https://img.icons8.com/fluency/344/facebook-new.png"></Image></Col>
+                            <Col><Image className="contacts-images" src="https://img.icons8.com/fluency/344/facebook-new.png" alt="facebook image"></Image></Col>
                             <Col xs={10}><a className="link" href="https://www.facebook.com/andre.miranda.77312" target="blank">https://www.facebook.com/andre.miranda.77312</a></Col>
                         </Row>
                         <Row className="findMe-row">
-                            <Col><Image className="contacts-images" src="https://img.icons8.com/color/344/instagram-new--v1.png"></Image></Col>
+                            <Col><Image className="contacts-images" src="https://img.icons8.com/color/344/instagram-new--v1.png" alt="instagram image"></Image></Col>
                             <Col xs={10}><a className="link" href="https://www.instagram.com/andremiranda4/" target="blank">https://www.instagram.com/andremiranda4/</a></Col>
                         </Row>
                         <Row className="findMe-row">
-                            <Col><Image className="contacts-images" src="https://img.icons8.com/external-justicon-flat-justicon/344/external-linkedin-social-media-justicon-flat-justicon.png"></Image></Col>
+                            <Col><Image className="contacts-images" src="https://img.icons8.com/external-justicon-flat-justicon/344/external-linkedin-social-media-justicon-flat-justicon.png" alt="linkedin image"></Image></Col>
                             <Col xs={10}><a className="link" href="https://www.linkedin.com/in/andre-miranda-3a768556/" target="blank">https://www.linkedin.com/in/andre-miranda-3a768556/</a></Col>
                         </Row>
                         <Row className="findMe-row">
-                            <Col><Image className="contacts-images" src="https://img.icons8.com/stickers/344/github.png"></Image></Col>
+                            <Col><Image className="contacts-images" src="https://img.icons8.com/stickers/344/github.png" alt="github images"></Image></Col>
                             <Col xs={10}><a className="link" href="https://github.com/affmde" target="blank">https://github.com/affmde</a></Col>
                         </Row>
                     </Col>

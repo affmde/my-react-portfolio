@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom'
 export const Homepage = () => {
     const nav= useNavigate()
     return(
-        <div class="page-container">
+        <div className="page-container">
             <Container>
                 <Row style={{height: '84vh', display: 'flex', alignItems:'center', textAlign: 'center'}}>
                     <Col className="center">
@@ -25,7 +25,7 @@ export const Homepage = () => {
                     </Col>
 
                     <Col xs={12} md={8} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                        <Image src={developerEmoji} id="developerEmoji"></Image>
+                        <Image src={developerEmoji} id="developerEmoji" alt="developer Emoji"></Image>
                         <Col id="homepage-quote">“Great web design without functionality is like a sports car with no engine.”<br/>Paul Cookson </Col>
                     </Col>
                     <Col id="box">

@@ -18,7 +18,7 @@ export const PopoverComponent = (props) =>{
 
     return(
       <div ref={ref}>
-      <Image className='education-logo' src={props.image} onMouseEnter={handleClick}></Image>
+      <Image className='education-logo' src={props.image} onMouseEnter={handleClick} alt="logo"></Image>
 
       <Overlay
         show={show}

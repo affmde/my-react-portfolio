@@ -3,6 +3,7 @@ import './about.css'
 import myPhoto from '../media/images/andre-miranda.jpg'
 import { TooltipComponent } from "./tooltip"
 import {Helmet} from "react-helmet"
+import homepagePic from '../media/images/homepagePic.png'
 
 export const About = () => {
     return (
@@ -11,13 +12,17 @@ export const About = () => {
                 <title>About Me</title>
                 <meta 
                     name="description"
+                    property="description"
                     content="Discover more about me and my story of life"
                 />
+                <meta property="og:title" content="About Me" />
+                <meta property="og:url" content="https://affmde.github.io/my-react-portfolio/#/about" />
+                <meta property="og:image" content={homepagePic} />
             </Helmet>
             <Container>
             <Row style={{minHeight: '70vh', display: 'flex', flexDirection: 'column', alignItems:'center', textAlign: 'center'}} >
                     <Col>
-                        <Image id="myPhoto" src={myPhoto}></Image>
+                        <Image id="myPhoto" src={myPhoto} alt="Andre Miranda"></Image>
                     </Col>
                     <Col xs={12} md={8} id="about-text-container" style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left'}}>
                         <Col style={{fontSize:"5vh", fontWeight: 'bold'}}>My story...</Col>
@@ -58,19 +63,19 @@ export const About = () => {
                     <Col md={6}>
                         <Col className="info-title">Languages</Col>
                         <Row>
-                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/portugal.png"></Image></Col>
+                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/portugal.png" alt="portugal"></Image></Col>
                             <Col className="languages-txt">Native</Col>
                         </Row>
                         <Row>
-                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/great-britain.png"></Image></Col>
+                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/great-britain.png" alt="english"></Image></Col>
                             <Col className="languages-txt">Fluent</Col>
                         </Row>
                         <Row>
-                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/spain.png"></Image></Col>
+                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/spain.png" alt="spanish"></Image></Col>
                             <Col className="languages-txt">Intermediate</Col>
                         </Row>
                         <Row>
-                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/finland.png"></Image></Col>
+                            <Col><Image className="languages-img" src="https://img.icons8.com/color/344/finland.png" alt="finnish"></Image></Col>
                             <Col className="languages-txt">Intermediate</Col>
                         </Row>
                     </Col>

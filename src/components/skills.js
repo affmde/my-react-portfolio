@@ -9,7 +9,7 @@ import backendLogos from '../media/images/backend-logos.png';
 import backendHorizontal from '../media/images/backend-logos-horizontal.png'
 import { PopoverComponent } from "./popoverComponent";
 import {Helmet} from "react-helmet";
-
+import homepagePic from '../media/images/homepagePic.png'
 
 export const Skills = () => {
     return(
@@ -18,8 +18,12 @@ export const Skills = () => {
                 <title>Skills</title>
                 <meta 
                     name="description"
+                    property="description"
                     content="Find all my technical habilities as well as my education"
                 />
+                <meta property="og:title" content="Skills" />
+                <meta property="og:url" content="https://affmde.github.io/my-react-portfolio/#/skills" />
+                <meta property="og:image" content={homepagePic} />
             </Helmet>
             <Container>
                 <Row style={{marginBottom: '40px'}}>
@@ -44,11 +48,11 @@ export const Skills = () => {
                         </Row>
                     </Col>
                     <Col id="skills-logo-container">
-                        <Image id="skills-image" src={skills}></Image>
-                        <Image id="backend-logos" src={backendLogos}></Image>
+                        <Image id="skills-image" src={skills} alt="skills image"></Image>
+                        <Image id="backend-logos" src={backendLogos} alt="back end image"></Image>
                     </Col>
-                    <Image className="skills-image-horizontal" src={skillsHorizontal}></Image>
-                    <Image className="skills-image-horizontal" src={backendHorizontal}></Image>
+                    <Image className="skills-image-horizontal" src={skillsHorizontal} alt="skills horizontal image"></Image>
+                    <Image className="skills-image-horizontal" src={backendHorizontal} alt="backend horizontal image"></Image>
                 </Row>
                 <Row style={{marginBottom: '50px'}}>
                     <Col id="education-logo-container">

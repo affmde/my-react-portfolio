@@ -8,7 +8,7 @@ export const TooltipComponent = (props) =>{
 
   return (
     <>
-      <Image src={props.image} ref={target} onMouseEnter={() => setShow(true)} onMouseLeave={()=>setShow(false)} className="hobbies-img"/>
+      <Image src={props.image} ref={target} onMouseEnter={() => setShow(true)} onMouseLeave={()=>setShow(false)} className="hobbies-img" alt="hobbie"/>
         
       <Overlay target={target.current} show={show} placement="bottom">
         {({ placement, arrowProps, show: _show, popper, ...props }) => (

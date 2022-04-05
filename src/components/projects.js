@@ -5,6 +5,7 @@ import theQuiz from '../media/images/the-quiz.png';
 import youscout from '../media/images/youscout.png'
 import { Card } from "./card";
 import {Helmet} from "react-helmet";
+import homepagePic from '../media/images/homepagePic.png'
 
 export const Projects = () => {
     return (
@@ -13,8 +14,12 @@ export const Projects = () => {
                 <title>Projects</title>
                 <meta 
                     name="description"
+                    property="description"
                     content="Check all my projects. You can try them live or read more about my experience on creating them"
                 />
+                <meta property="og:title" content="Projects" />
+                <meta property="og:url" content="https://affmde.github.io/my-react-portfolio/#/projects" />
+                <meta property="og:image" content={homepagePic} />
             </Helmet>
             <div>
                 <p className="center" id="projects-title">My Projects</p>
