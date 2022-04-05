@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-react-portfolio/static/css/main.7849a94e.css",
-    "main.js": "/my-react-portfolio/static/js/main.be1e4e90.js",
+    "main.css": "/my-react-portfolio/static/css/main.8373fee2.css",
+    "main.js": "/my-react-portfolio/static/js/main.09f7764d.js",
     "static/js/787.56d9acf9.chunk.js": "/my-react-portfolio/static/js/787.56d9acf9.chunk.js",
     "static/media/youscout.png": "/my-react-portfolio/static/media/youscout.2a5579b6a20e1d0f532b.png",
     "static/media/youscout1.png": "/my-react-portfolio/static/media/youscout1.8aac14163c197c27d329.png",
@@ -27,12 +27,12 @@
     "static/media/helsinki-university.png": "/my-react-portfolio/static/media/helsinki-university.3f7263c042770f3916f2.png",
     "static/media/am-no-background.png": "/my-react-portfolio/static/media/am-no-background.0771b55f42c4b4685ed9.png",
     "index.html": "/my-react-portfolio/index.html",
-    "main.7849a94e.css.map": "/my-react-portfolio/static/css/main.7849a94e.css.map",
-    "main.be1e4e90.js.map": "/my-react-portfolio/static/js/main.be1e4e90.js.map",
+    "main.8373fee2.css.map": "/my-react-portfolio/static/css/main.8373fee2.css.map",
+    "main.09f7764d.js.map": "/my-react-portfolio/static/js/main.09f7764d.js.map",
     "787.56d9acf9.chunk.js.map": "/my-react-portfolio/static/js/787.56d9acf9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7849a94e.css",
-    "static/js/main.be1e4e90.js"
+    "static/css/main.8373fee2.css",
+    "static/js/main.09f7764d.js"
   ]
 }
