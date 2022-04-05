@@ -1,5 +1,0 @@
-https://affmde.github.io/my-react-portfolio/
-https://affmde.github.io/my-react-portfolio/#/about
-https://affmde.github.io/my-react-portfolio/#/skills
-https://affmde.github.io/my-react-portfolio/#/projects
-https://affmde.github.io/my-react-portfolio/#/contacts
