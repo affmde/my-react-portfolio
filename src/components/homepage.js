@@ -21,8 +21,8 @@ export const Homepage = () => {
                                 </Row>
                             </Col>
                             <Col><p id="webdev-description">I am a junior developer who is trying to enter the Market and 
-                                getting experience in this amazing Tech World! </p>
-                                <span role="img" aria-label="grinning-face">😀</span></Col>
+                                getting experience in this amazing Tech World! <span role="img" aria-label="grinning-face">😀</span></p>
+                                </Col>
                             <Col id="hire-btn-container">
                                 <Button id="hireMe-button" onClick={()=>nav('/contacts')}>Contact me</Button>
                             </Col>
