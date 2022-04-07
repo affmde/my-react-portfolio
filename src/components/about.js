@@ -9,7 +9,7 @@ export const About = () => {
     return (
         <div className="page-container animate__animated animate__zoomIn">
             <Helmet>
-                <title>About Me</title>
+                <title>Andre Miranda | About Me</title>
                 <meta 
                     name="description"
                     property="description"

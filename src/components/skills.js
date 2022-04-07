@@ -15,7 +15,7 @@ export const Skills = () => {
     return(
         <div className="page-container">
             <Helmet>
-                <title>Skills</title>
+                <title>Andre Miranda | Skills</title>
                 <meta 
                     name="description"
                     property="description"

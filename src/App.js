@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {HashRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { About } from './components/about';
 import { Homepage } from './components/homepage';
 import { TopNav } from './components/navbar';
@@ -13,9 +13,9 @@ import {Helmet} from 'react-helmet';
 function App() {
   return (
     <div>
-      <HashRouter>
+      <BrowserRouter>
         <Helmet>
-          <title>Portfolio</title>
+          <title>André Miranda | Portfolio</title>
           <meta 
             name="keywords"
             content="Portfolio, web-development, Projects, Andre Miranda, affmde, job, seeker"
@@ -31,7 +31,7 @@ function App() {
           <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

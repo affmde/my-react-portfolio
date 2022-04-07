@@ -11,7 +11,7 @@ export const Projects = () => {
     return (
         <div className="page-container">
             <Helmet>
-                <title>Projects</title>
+                <title>Andre Miranda | Projects</title>
                 <meta 
                     name="description"
                     property="description"

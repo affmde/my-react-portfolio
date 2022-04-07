@@ -29,7 +29,7 @@ export const Contacts = () => {
     return(
         <div className="page-container">
             <Helmet>
-                <title>Contacts</title>
+                <title>Andre Miranda | Contacts</title>
                 <meta 
                     name="description"
                     property="og:description"
