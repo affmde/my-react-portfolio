@@ -21,8 +21,8 @@ export const CertificatesComponent = (props) => {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <Row style={{textAlign: 'right', marginBottom: '20px'}}>
-                    <Col className="yearFilter" xs={1}>
+                <Row style={{marginBottom: '20px'}}>
+                    <Col className="yearFilter" xs="auto" md={2} lg={1}>
                         <Button 
                             variant="outline-success" 
                             onClick={()=> year ==="2021" ? setYear(null) : setYear("2021")} id="cert-filter-btn"
@@ -31,7 +31,7 @@ export const CertificatesComponent = (props) => {
                             2021
                         </Button>
                     </Col>
-                    <Col className="yearFilter" xs={1}>
+                    <Col className="yearFilter" xs="auto" md={2} lg={1}>
                         <Button 
                             variant="outline-success" 
                             onClick={()=> year==="2022" ? setYear(null) : setYear("2022")}
@@ -40,7 +40,7 @@ export const CertificatesComponent = (props) => {
                             2022
                         </Button>
                     </Col>
-                    <Col xs={{offset: 2, span:8}}>
+                    <Col xs={12} md={{offset: 1, span: 7}} lg={{offset: 2, span: 8}}>
                          <Form.Control type="text" placeholder="Filter Course" value={filter} onChange={(e)=>setFilter(e.target.value)} />
                     </Col>
                 </Row>
