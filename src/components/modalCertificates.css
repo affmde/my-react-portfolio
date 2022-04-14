@@ -1,0 +1,13 @@
+
+.certificate-img{
+    width: 100%;
+}
+
+.yearFilter:hover{
+    font-weight: bold;
+}
+
+.filter-btn-active{
+    background-color: darkgreen;
+    color: white;
+}

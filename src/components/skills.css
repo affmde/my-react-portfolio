@@ -87,6 +87,20 @@
     font-style: italic;
 }
 
+.check-certificates{
+    margin: 8vh;
+    text-align: end;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.check-certificates:hover{
+    color: green;
+}
+.check-certificates:active{
+    position: relative;
+    top: 2px;
+}
+
 @media only screen and (max-width:600px){
     .question{
         font-weight: bold;

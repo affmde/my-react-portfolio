@@ -9,9 +9,12 @@ import backendLogos from '../media/images/backend-logos.png';
 import backendHorizontal from '../media/images/backend-logos-horizontal.png'
 import { PopoverComponent } from "./popoverComponent";
 import {Helmet} from "react-helmet";
-import homepagePic from '../media/images/homepagePic.png'
+import homepagePic from '../media/images/homepagePic.png';
+import { useState } from "react";
+import { CertificatesComponent } from "./modalCertificates";
 
 export const Skills = () => {
+    const [modalShow, setModalShow] = useState(false);
     return(
         <div className="page-container">
             <Helmet>
@@ -83,9 +86,14 @@ export const Skills = () => {
                             <Col className="school">Codecademy</Col>
                             <Col className="degree">Full Stack open 2022</Col>
                             <Col className="school">Helsinki University</Col>
+                            <Col onClick={() => setModalShow(true)} xs={{span: 6, offset: 6}} className="check-certificates">Check all my certificates</Col>
                         </Row>
                     </Col>
                 </Row>
+                <CertificatesComponent 
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                />
             </Container>
 
         </div>
