@@ -11,3 +11,17 @@
     background-color: darkgreen;
     color: white;
 }
+
+.relevant{
+    background-color: green;
+    color: white;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 992px){
+    .relevant{
+        display: none;
+    }
+}

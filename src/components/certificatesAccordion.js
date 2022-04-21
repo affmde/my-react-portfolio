@@ -13,7 +13,7 @@ export const CertificatesAccordion = (props) => {
                 return(
                 <Accordion.Item eventKey={certificate.id} key={certificate.id}>
                     <Accordion.Header>
-                        {certificate.name} - {certificate.conclusion}
+                        {certificate.name} - {certificate.conclusion} {certificate.relevant ? <span className="relevant">Relevant</span> : ""}
                     </Accordion.Header>
                     <Accordion.Body>
                         <Image 
