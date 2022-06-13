@@ -10,7 +10,10 @@ import cert9 from './media/images/myCertificates/intermediate-javascript.png';
 import cert10 from './media/images/myCertificates/bootstrap.png';
 import cert11 from './media/images/myCertificates/namecheap.png';
 import cert12 from './media/images/myCertificates/intermediate-CSS.png';
-
+import cert13 from './media/images/myCertificates/learnWebsockets.png';
+import cert14 from './media/images/myCertificates/gameDevelopment-Phaser.png'
+import cert15 from './media/images/myCertificates/create-videogames-with-phaser.png';
+import cert16 from './media/images/myCertificates/introductionToDevOps.png';
 
 export const myCertificates =[
     {
@@ -109,4 +112,36 @@ export const myCertificates =[
         url: cert12,
         relevant: false
     },
+    {
+        id: 12,
+        name: "Learn WebSockets Course",
+        school: "Codecademy",
+        conclusion: "2022",
+        url: cert13,
+        relevant: false
+    },
+    {
+        id: 13,
+        name: "Learn Game Development with Phaser.js Course",
+        school: "Codecademy",
+        conclusion: "2022",
+        url: cert14,
+        relevant: false
+    },
+    {
+        id: 14,
+        name: "Create Video Games with Phaser.js Skill Path",
+        school: "Codecademy",
+        conclusion: "2022",
+        url: cert15,
+        relevant: true
+    },
+    {
+        id: 15,
+        name: "Introduction to DevOps Course",
+        school: "Codecademy",
+        conclusion: "2022",
+        url: cert16,
+        relevant: false
+    }
 ]
