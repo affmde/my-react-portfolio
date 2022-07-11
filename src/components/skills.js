@@ -17,12 +17,14 @@ import unityJuniorProgrammerBadge from "../media/images/myCertificates/unity-jun
 import unityEssentialsBadge from '../media/images/myCertificates/Unity_Essentials-Pathway_Badge.png';
 import { BadgesModal } from "./badgesModal";
 import {digitalBadgeInfo} from '../myDigitalBadges';
+import { useNavigate } from "react-router-dom";
 
 export const Skills = () => {
     const [modalShow, setModalShow] = useState(false);
     const [showBadgesModal, setShowBadgesModal] = useState(false);
     const [modalBadgeInfo, setModalBadgeInfo] = useState({});
 
+    const navigate = useNavigate();
     const handleShow = (index) =>{
         setShowBadgesModal(true);
         setModalBadgeInfo({
@@ -67,12 +69,12 @@ export const Skills = () => {
                         </Row>
                         <Row className="questions-row">
                             <Col className="question">Do I feel more confortable with Front-End or Back-End?</Col>
-                            <Col className="answer">I would say that I can consider my self as better in the Front-End side because I have been done more front-end based projects. Althought, for my lastest projects I decided to start focusing more on the using of Node, express and socket.io in order to develop my back-end side.</Col>
+                            <Col className="answer">I would say that I can consider my self as better in the Front-End side because I have done more front-end based projects. Althought, for my lastest projects I decided to start focusing more on the using of Node, express and socket.io in order to develop my back-end side. In this projects I used CRUD and REST to manage and display data. </Col>
                         </Row>
                         <Row className="questions-row">
                             <Col className="question">What is my Experience?</Col>
                             <Col className="answer">I'm a self-taught developer who in the end of 2021 decided to change career from football to Web development.
-                            This way I'm still a junior developer who is trying to get the oportunity to enter in the market.</Col>
+                            This way I'm still a junior developer who is trying to get the oportunity to enter in the market. I recently (June 2022) made my first professional project to a Hairdressing salon in Helsinki, Finland, that you can visit <span onClick={()=>navigate("/projects")} id="spanSkillsToProjects">here</span>.</Col>
                         </Row>
                         <Row className="questions-row">
                             <Col className="question">How have you been teaching yourself and what are your plans for the future?</Col>

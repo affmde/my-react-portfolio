@@ -20,7 +20,7 @@ export const Homepage = () => {
                                     <Col xs={12}><h2 className='web-dev'>Game Developer</h2></Col>
                                 </Row>
                             </Col>
-                            <Col><p id="webdev-description">I am a junior developer who is trying to enter the Market and 
+                            <Col><p id="webdev-description">I am a junior developer who is trying to enter the market and 
                                 getting experience in this amazing Tech World! <span role="img" aria-label="grinning-face">😀</span></p>
                                 </Col>
                             <Col id="hire-btn-container">
