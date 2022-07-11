@@ -14,8 +14,7 @@
     animation-duration: 1s;
 }
 
-#projects-container{
-    min-height: 70vh;
+.projects-container{
     display: flex;
     flex-wrap: wrap;
     justify-Content: space-evenly;
@@ -25,6 +24,18 @@
 
     animation: rotateInUpLeft; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 0.5s; /* don't forget to set a duration! */
+}
+
+.projectsType{
+    text-align: center;
+    color: #a9d0b3;
+    font-weight: bold;
+    text-shadow: 0 0px 0px rgba(54, 128, 74, 0.5);
+    letter-spacing: 0.05em;
+    background: -webkit-linear-gradient(#eee, rgb(66, 181, 103));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px #333);
 }
 
 .card-img{

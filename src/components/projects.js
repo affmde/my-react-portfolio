@@ -9,6 +9,7 @@ import homepagePic from '../media/images/homepagePic.png';
 import theGamer from '../media/images/the-gamer.png';
 import theAdventurer from '../media/images/theAdventurer.png';
 import theRacer from '../media/images/theRacer.png'
+import helmiHelsinki from '../media/images/helmiHelsinki.png';
 
 export const Projects = () => {
     return (
@@ -25,9 +26,26 @@ export const Projects = () => {
                 <meta property="og:image" content={homepagePic} />
             </Helmet>
             <div>
-                <p className="center" id="projects-title">My Projects</p>
+                <h2 className="center" id="projects-title">My Projects</h2>
             </div>
-            <Container id="projects-container">
+            <div style={{marginBottom:'10vh'}}>
+                <h3 className="projectsType" id="professionalProjects">Professional projects</h3>
+                <Container className="projects-container">
+                <Card
+                    image={helmiHelsinki} 
+                    title="Helmi Helsinki"
+                    subtitle="Hairdress salon"
+                    description="Hairdress salon from Helsinki, Finland. Website can be access in Finnish, Swedish and English."
+                    url="https://helmihelsinki.fi"
+                    index={6}
+                    />
+                </Container>
+            </div>
+
+
+            <div>
+                <h3 className="projectsType" id="personalProjects">Personal Projects</h3>
+                <Container className="projects-container">
 
                 <Card
                 image={theRacer} 
@@ -89,6 +107,8 @@ export const Projects = () => {
                 />
                     
             </Container>
+            </div>
+            
         </div>
     )
 }

@@ -3,6 +3,7 @@
     margin-top: 10vh;
     border-radius: 5%;
     box-shadow: 1px 2px 3px 4px rgba(211, 211, 211, 0.274);
+    pointer-events:none;
 }
 
 #about-text-container > *{

@@ -6,15 +6,36 @@ import codecademy from '../media/images/codecademy-logo.png';
 import helsinkiUniversity from '../media/images/helsinki-university.png'
 import skillsHorizontal from '../media/images/skill-horizontal.png';
 import backendLogos from '../media/images/backend-logos.png';
-import backendHorizontal from '../media/images/backend-logos-horizontal.png'
+import backendHorizontal from '../media/images/backend-logos-horizontal.png';
+import unity from '../media/images/unity.png';
 import { PopoverComponent } from "./popoverComponent";
 import {Helmet} from "react-helmet";
 import homepagePic from '../media/images/homepagePic.png';
 import { useState } from "react";
 import { CertificatesComponent } from "./modalCertificates";
+import unityJuniorProgrammerBadge from "../media/images/myCertificates/unity-junior-programmer.png";
+import unityEssentialsBadge from '../media/images/myCertificates/Unity_Essentials-Pathway_Badge.png';
+import { BadgesModal } from "./badgesModal";
+import {digitalBadgeInfo} from '../myDigitalBadges';
 
 export const Skills = () => {
     const [modalShow, setModalShow] = useState(false);
+    const [showBadgesModal, setShowBadgesModal] = useState(false);
+    const [modalBadgeInfo, setModalBadgeInfo] = useState({});
+
+    const handleShow = (index) =>{
+        setShowBadgesModal(true);
+        setModalBadgeInfo({
+            title: digitalBadgeInfo[index].title,
+            logo: digitalBadgeInfo[index].logo,
+            subtitle: digitalBadgeInfo[index].subtitle,
+            description: digitalBadgeInfo[index].description,
+            url: digitalBadgeInfo[index].url,
+            earned: digitalBadgeInfo[index].earned
+        })
+    }
+
+    console.log(digitalBadgeInfo)
     return(
         <div className="page-container">
             <Helmet>
@@ -60,40 +81,66 @@ export const Skills = () => {
                     </Col>
                     <Col id="skills-logo-container" xs={12} md={4}>
                         <Image id="skills-image" src={skills} alt="skills image"></Image>
+                        <Image id="unity-logo" src={unity} alt="Unity logo"/>
                         <Image id="backend-logos" src={backendLogos} alt="back end image"></Image>
                     </Col>
                     <Image className="skills-image-horizontal" src={skillsHorizontal} alt="skills horizontal image"></Image>
                     <Image className="skills-image-horizontal" src={backendHorizontal} alt="backend horizontal image"></Image>
                 </Row>
+                <Row>
+                    <Row className="skills-titles">
+                        <Col style={{textAlign: 'center', marginBottom: '30px'}}>Digital badges</Col>
+                    </Row>
+                    <Row className="badges-row">
+                        <Col xs={{offset: 3, span:3}} lg={{offset: 5, span:1}} onClick={() => handleShow(0)}><Image alt="Unity Junior Programmer" src={unityJuniorProgrammerBadge} className="digitalBadges"></Image></Col>
+                        <Col xs={{offset: 0, span:3}} lg={{offset: 0, span:1}} onClick={() => handleShow(1)}><Image alt="Unity Junior Programmer" src={unityEssentialsBadge} className="digitalBadges"></Image></Col>
+                    </Row>
+                </Row>
                 <Row style={{marginBottom: '50px'}}>
                     <Col id="education-logo-container">
-                        <PopoverComponent image={esdrm}
-                                          title={'ESDRM'}
-                                          website="https://siesdrm.ipsantarem.pt/esdrm/si_main"
-                                          url="https://siesdrm.ipsantarem.pt/esdrm/web_gessi_docs.download_file?p_name=F1276349851/Campus%20ESDRM.jpg" 
-                        />
-                        <PopoverComponent image={codecademy}
-                                          title={'Codecademy'}
-                                          website="https://www.codecademy.com/"
-                                          url="https://research-assets.cbinsights.com/2022/01/03014853/Codecademy-Image.png" 
-                        />
-                        <PopoverComponent image={helsinkiUniversity}
-                                          title={'Helsinki University'}
-                                          website="https://fullstackopen.com/en/"
-                                          url="https://www.helsinki.fi/assets/drupal/s3fs-public/styles/hero_image/public/migrated-group-news/150058-fullstack_en_1184x507.jpg?h=316e730a&itok=gg-qwvAH" 
-                        />
-                        
+                        <Row>
+                            <Col lg={6}>
+                                <PopoverComponent image={esdrm}
+                                        title={'ESDRM'}
+                                        website="https://siesdrm.ipsantarem.pt/esdrm/si_main"
+                                        url="https://siesdrm.ipsantarem.pt/esdrm/web_gessi_docs.download_file?p_name=F1276349851/Campus%20ESDRM.jpg" 
+                                />
+                            </Col>
+                            <Col lg={6}>
+                                <PopoverComponent image={codecademy}
+                                    title={'Codecademy'}
+                                    website="https://www.codecademy.com/"
+                                    url="https://research-assets.cbinsights.com/2022/01/03014853/Codecademy-Image.png" 
+                                />
+                            </Col>
+                            <Col lg={6}>
+                                <PopoverComponent image={helsinkiUniversity}
+                                    title={'Helsinki University'}
+                                    website="https://fullstackopen.com/en/"
+                                    url="https://www.helsinki.fi/assets/drupal/s3fs-public/styles/hero_image/public/migrated-group-news/150058-fullstack_en_1184x507.jpg?h=316e730a&itok=gg-qwvAH" 
+                                />
+                            </Col>
+                            <Col lg={6}>
+                                <PopoverComponent image={unity}
+                                    title={'Unity'}
+                                    website="https://learn.unity.com/?variant=b"
+                                    url="https://diak46rl5chc7.cloudfront.net/orgs/131534/contents/c52cguo24tkdwk9i/c52cguo24tkdwk9i.jpg" 
+                                />
+                            </Col>
+                        </Row>          
                     </Col>
 
                     <Col>
                         <Row className="questions-row">
-                            <Col id="education-title">Education</Col>
+                            <Col className="skills-titles">Education</Col>
                             <Col className="degree">Bachelor - Sports Science with specialization in Football</Col>
                             <Col className="school">Sports Science School of Rio Maior, Portugal</Col>
                             <Col className="degree">Front End Engineer Career Path</Col>
                             <Col className="school">Codecademy</Col>
                             <Col className="degree">Full Stack open 2022</Col>
                             <Col className="school">Helsinki University</Col>
+                            <Col className="degree">Unity Junior Programmer</Col>
+                            <Col className="school">Learn Unity</Col>
                             <Col onClick={() => setModalShow(true)} xs={{span: 6, offset: 6}} className="check-certificates">Check all my certificates</Col>
                         </Row>
                     </Col>
@@ -102,6 +149,10 @@ export const Skills = () => {
                     show={modalShow}
                     onHide={() => setModalShow(false)}
                 />
+                <BadgesModal 
+                    show={showBadgesModal}
+                    onHide={() => setShowBadgesModal(false)}
+                    info= {modalBadgeInfo}/>
             </Container>
 
         </div>

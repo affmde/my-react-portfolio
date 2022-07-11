@@ -4,6 +4,10 @@
 #backend-logos{
     height:30vh;
 }
+#unity-logo{
+    width: 50%;
+    margin: 5vh 0;
+}
 #skills-logo-container{
     display: flex;
     flex-direction: column;
@@ -62,13 +66,13 @@
 }
 
 .education-logo{
-    width: 40vh;
+    width: 80%;
 }
 .education-logo:hover{
     transform: scale(1.05);
 }
 
-#education-title{
+.skills-titles{
     font-size: 5vh;
     font-weight: bold;
     letter-spacing: .15em;
@@ -79,6 +83,37 @@
     letter-spacing: 0.08em;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.badges-row{
+    margin-bottom: 7vh;
+}
+
+.digitalBadges{
+    width: 100%;
+    cursor: pointer;
+}
+.digitalBadges:hover{
+    transform: scale(1.05);
+}
+
+.badgeLogoTitle{
+    width: 50px;
+}
+
+.urlLink{
+    position: relative;
+    text-align: start;
+    text-decoration: none;
+    color: black;
+}
+.urlLink:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+#earned{
+    margin-right: 5vw;
 }
 
 .school{

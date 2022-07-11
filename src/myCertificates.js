@@ -14,6 +14,7 @@ import cert13 from './media/images/myCertificates/learnWebsockets.png';
 import cert14 from './media/images/myCertificates/gameDevelopment-Phaser.png'
 import cert15 from './media/images/myCertificates/create-videogames-with-phaser.png';
 import cert16 from './media/images/myCertificates/introductionToDevOps.png';
+import cert17 from './media/images/myCertificates/UnityJuniorDeveloper.png';
 
 export const myCertificates =[
     {
@@ -143,5 +144,13 @@ export const myCertificates =[
         conclusion: "2022",
         url: cert16,
         relevant: false
+    },
+    {
+        id: 16,
+        name: "Unity Junior Programmer",
+        school: "Learn Unity",
+        conclusion: "2022",
+        url: cert17,
+        relevant: true
     }
 ]

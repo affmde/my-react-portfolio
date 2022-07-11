@@ -2,6 +2,8 @@
 
   RewriteEngine On
   RewriteBase /
+  RewriteCond %{HTTP_HOST} ^www.andreffmiranda.com [NC]
+  RewriteRule ^(.*)$ https://andreffmiranda.com/$1 [L,R=301]
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

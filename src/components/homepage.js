@@ -16,8 +16,8 @@ export const Homepage = () => {
                             <Col ><h1 id="title">André Miranda</h1></Col>
                             <Col>
                                 <Row>
-                                    <Col xs={12}><h4 className='web-dev'>Full Stack Web Developer</h4></Col>
-                                    <Col xs={12}><h4 className='web-dev'>Game Developer</h4></Col>
+                                    <Col xs={12}><h2 className='web-dev'>Full Stack Web Developer</h2></Col>
+                                    <Col xs={12}><h2 className='web-dev'>Game Developer</h2></Col>
                                 </Row>
                             </Col>
                             <Col><p id="webdev-description">I am a junior developer who is trying to enter the Market and 

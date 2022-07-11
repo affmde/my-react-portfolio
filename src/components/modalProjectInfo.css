@@ -9,3 +9,12 @@
 .stack-image:hover{
     transform: scale(1.1);
 }
+
+#starsBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.customerReviewStar{
+    width: 50px;
+}

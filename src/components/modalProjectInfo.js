@@ -2,8 +2,15 @@ import { Modal, Button, Image, Carousel } from "react-bootstrap";
 import './modalProjectInfo.css';
 import {useState} from 'react';
 import {projectsInfo} from '../projectsInfo'
+import star from '../media/images/star.png';
 
 export const ModalConstInfo = (props)=>{
+  const images= [];
+  for(let i=0; i<projectsInfo[props.index].stars; i++){
+    images.push(<Image alt="star" src={star} className="customerReviewStar" />)
+  }
+
+  console.log('images: ', images);
     return (
         <Modal
           {...props}
@@ -19,10 +26,15 @@ export const ModalConstInfo = (props)=>{
           <CarousselComponent index={props.index}/>
           <Modal.Body>
             <h4>Overview:</h4>
-            <p style={{whiteSpace: 'pre-wrap'}}> 
-            {projectsInfo[props.index].overview}
+            <p style={{whiteSpace: 'pre-wrap'}}>
+              {projectsInfo[props.index].overview}
             </p>
-            <h4>Main Lessons:</h4>
+            <h4>{projectsInfo[props.index].type === "personal" ? "Main Lessons:" : "Costumer review"}</h4>
+            <div id="starsBox">
+              {projectsInfo[props.index].type==='professional' && 
+                  images.map(star=>star)
+              }
+            </div>
             <p style={{whiteSpace: 'pre-wrap'}}> 
             {projectsInfo[props.index].mainLessons}
             </p>
