@@ -15,6 +15,7 @@ import cert14 from './media/images/myCertificates/gameDevelopment-Phaser.png'
 import cert15 from './media/images/myCertificates/create-videogames-with-phaser.png';
 import cert16 from './media/images/myCertificates/introductionToDevOps.png';
 import cert17 from './media/images/myCertificates/UnityJuniorDeveloper.png';
+import cert18 from './media/images/myCertificates/SecuringExpressApps.png';
 
 export const myCertificates =[
     {
@@ -152,5 +153,13 @@ export const myCertificates =[
         conclusion: "2022",
         url: cert17,
         relevant: true
-    }
+    },
+    {
+        id: 17,
+        name: "Securing Express Applications",
+        school: "Codecademy",
+        conclusion: "2022",
+        url: cert18,
+        relevant: true
+    },
 ]

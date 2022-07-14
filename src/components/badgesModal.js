@@ -1,7 +1,7 @@
 import { Modal, Button, Image } from "react-bootstrap";
 
 export const BadgesModal = (props) => {
-    console.log('modal props: ', props);
+    
     return(
         <Modal
       {...props}

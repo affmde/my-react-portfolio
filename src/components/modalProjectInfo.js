@@ -10,7 +10,6 @@ export const ModalConstInfo = (props)=>{
     images.push(<Image alt="star" src={star} className="customerReviewStar" />)
   }
 
-  console.log('images: ', images);
     return (
         <Modal
           {...props}

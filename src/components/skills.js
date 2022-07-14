@@ -37,7 +37,6 @@ export const Skills = () => {
         })
     }
 
-    console.log(digitalBadgeInfo)
     return(
         <div className="page-container">
             <Helmet>
